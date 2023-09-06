@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/telaCruza.css">
+    <title>Document</title>
+</head>
+<header>
+    <a href="index.html">
+    <div class="left-header">
+        <img src="imgs/logoprojeto.png" alt="logo">
+    </div>
+    </a>
+    <nav class="navheader">
+        <ul>
+            <li><a class="meu-botao" href="cadastroCao.html">Cadastro Cão</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <form>
+        <label for="breed">Raça:</label>
+        <select id="breed">
+            <option value="todas">Todas as raças</option>
+            <option value="labrador">Labrador</option>
+            <option value="poodle">Poodle</option>
+            <option value="bulldog">Bulldog</option>
+            <option value="golden_retriever">Golden Retriever</option>
+            <option value="german_shepherd">Pastor Alemão</option>
+            <option value="beagle">Beagle</option>
+            <option value="rottweiler">Rottweiler</option>
+            <option value="siberian_husky">Husky Siberiano</option>
+            <option value="dalmatian">Dálmata</option>
+            <option value="boxer">Boxer</option>
+            <option value="chihuahua">Chihuahua</option>
+            <option value="dachshund">Dachshund</option>
+            <option value="great_dane">Grand Danois</option>
+            <option value="shih_tzu">Shih Tzu</option>
+            <option value="boston_terrier">Boston Terrier</option>
+            <option value="yorkshire_terrier">Yorkshire Terrier</option>
+            <option value="pomeranian">Pomeranian</option>
+            <option value="bulldog_french">Bulldog Francês</option>
+            <option value="border_collie">Border Collie</option>
+            <option value="saint_bernard">São Bernardo</option>
+            <option value="doberman">Doberman</option>
+            <option value="maltese">Maltês</option>
+            <option value="newfoundland">Newfoundland</option>
+            <option value="pug">Pug</option>
+            <option value="shiba_inu">Shiba Inu</option>
+            <!-- Adicione mais opções de raças aqui -->
+        </select>
+        <script>
+            var selectElement = document.getElementById('breed');
+            var options = Array.from(selectElement.options);
+            options.sort(function (a, b) {
+                return a.text.localeCompare(b.text);
+            });
+            options.forEach(function (option) {
+                selectElement.add(option);
+            });
+        </script>
+
+        <label for="size">Porte:</label>
+        <select id="size">
+            <option value="todos">Todos os portes</option>
+            <option value="pequeno">Pequeno</option>
+            <option value="medio">Médio</option>
+            <option value="grande">Grande</option>
+            <!-- Adicione mais opções de portes aqui -->
+        </select>
+
+        <label for="gender">Sexo:</label>
+        <select id="gender">
+            <option value="todos">Ambos os sexos</option>
+            <option value="macho">Macho</option>
+            <option value="femea">Fêmea</option>
+        </select>
+
+        <label for="city">Cidade:</label>
+        <input type="text" id="city">
+
+        <label for="state">Estado:</label>
+        <input type="text" id="state">
+        <input type="submit" value="Filtrar">
+    </form>
+    <main>
+        <div class="container">
+            <div class="listings">
+                <div class="listing-card">
+                    <a href="#">
+                        <img src="imgs/chico.jpeg" alt="Cachorro 1">
+                        <h2>Chicao</h2>
+                        <p> São Paulo, São Paulo</p>
+                    </a>
+                </div>
+                <div class="listing-card">
+                    <a href="#"></a>
+                    <img id="cao2" src="imgs/cao2.jpg" alt="Cachorro 2">
+                    <h2>Dorinha</h2>
+                    <p>Boa Vista, Roraima</p>
+                    </a>
+                </div>
+                <div class="listing-card">
+                    <a href="#"></a>
+                    <img src="imgs/husky-siberiano_108_0_orig.jpg" alt="Cachorro 3">
+                    <h2>Luciano</h2>
+                    <p>Belo Horizonte, Minas Gerais</p>
+                    </a>
+                </div>
+                <div class="listing-card">
+                    <a href="#"></a>
+                    <img src="imgs/pitbull.jpg" alt="Cachorro 3">
+                    <h2>Gabriel</h2>
+                    <p>Fortaleza, Ceará</p>
+                    </a>
+                </div>
+                <div class="listing-card">
+                    <a href="#"></a>
+                    <img src="imgs/doberman-p.jpg" alt="Cachorro 3">
+                    <h2>Junin</h2>
+                    <p>Porto Alegre, Rio Grande do Sul</p>
+                    </a>
+                </div>
+                <div class="listing-card">
+                    <a href="#"></a>
+                    <img src="imgs/rottweiler-p.jpg" alt="Cachorro 3">
+                    <h2>Caminhão</h2>
+                    <p> Rio de Janeiro, Rio de Janeiro</p>
+                    </a>
+                </div>
+                <div class="listing-card">
+                    <a href="#"></a>
+                    <img src="imgs/caramelo.jpg" alt="Cachorro 3">
+                    <h2>Caramelo</h2>
+                    <p>Curitiba, Paraná</p>
+                    </a>
+                </div>
+                <div class="listing-card">
+                    <a href="#"></a>
+                    <img src="imgs/cao.png" alt="Cachorro 3">
+                    <h2>César</h2>
+                    <p>Campo Grande, Mato Grosso do Sul</p>
+                    </a>
+                </div>
+            </div>
+        </div>    
+    </main>
+    <footer class="rodape">
+        <div>
+            <h2>© Copyright Conexão Canina</h2>
+            <h2>Desenvolvido por Grupo PETS</h2>
+        </div>
+        <div>
+            <h2>Telefone: (16) 99999-9999</h2>
+            <h2>e-Mail: conexaocanina@gmail.com</h2>
+        </div>
+    </footer>
+</body>
+
+</html>

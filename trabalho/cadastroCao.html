@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/cadastroCao.css">
+  <title>Cadastro</title>
+</head>
+
+<body>
+  <header>
+    <a href="index.html">
+      <div class="left-header">
+        <img src="imgs/logoprojeto.png" alt="logo">
+      </div>
+    </a>
+    <nav class="navheader">
+      <ul>
+        <li><a class="meu-botao" href="telaCruza.html">Cachorros</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  <h1>Cadastre seu Cão</h1>
+  <main>
+    <form class="cadastro-form">
+      <div>
+
+        <label for="petNome">Nome:</label>
+        <input type="text" id="petNome" name="petNome" required>
+
+        <label for="sexoPedigree">Sexo:</label>
+        <select id="sexoPedigree" name="sexoPedigree" required>
+          <option value="Macho">Macho</option>
+          <option value="Femea">Fêmea</option>
+        </select>
+
+        <label for="petIdade">Ano de nascimento:</label>
+        <input type="number" id="petIdade" name="petIdade" required>
+
+        <label for="petRaca">Raça:</label>
+        <input type="text" id="petRaca" name="petRaca" required>
+
+        <label for="petPedigree">Pedigree:</label>
+        <select id="petPedigree" name="petPedigree" required>
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+        </select>
+
+        <label for="petCor">Cor:</label>
+        <input type="text" id="petCor" name="petCor" required>
+
+        <label for="petTamanho">Porte:</label>
+        <select id="petTamanho" name="petTamanho" required>
+          <option value="Grande">Grande</option>
+          <option value="Medio">Médio</option>
+          <option value="Pequeno">Pequeno</option>
+        </select>
+      </div>
+      <div>
+        <label class="insira">Insira as características/temperamento:</label>
+        <div class="opcoes">
+          <input type="checkbox" id="tipo1" name="tipo1" value="Manso">
+          <label for="tipo1">Manso</label>
+          <input type="checkbox" id="tipo1" name="tipo1" value="Agressivo">
+          <label for="tipo1">Agressivo</label>
+          <input type="checkbox" id="tipo1" name="tipo1" value="Leal">
+          <label for="tipo1">Leal</label>
+          <input type="checkbox" id="tipo1" name="tipo1" value="Brincalhão">
+          <label for="tipo1">Brincalhão</label>
+          <input type="checkbox" id="tipo1" name="tipo1" value="Inteligente">
+          <label for="tipo1">Inteligente</label>
+          <input type="checkbox" id="tipo1" name="tipo1" value="Elegante">
+          <label for="tipo1">Elegante</label>
+          <input type="checkbox" id="tipo1" name="tipo1" value="Companheiro">
+          <label for="tipo1">Tímido</label>
+          <input type="checkbox" id="tipo1" name="tipo1" value="Dócil">
+          <label for="tipo1">Dócil</label>
+          <input type="checkbox" id="tipo1" name="tipo1" value="Teimoso">
+          <label for="tipo1">Teimoso</label>
+          <input type="checkbox" id="tipo1" name="tipo1" value="Calmo">
+          <label for="tipo1">Calmo</label>
+          <input type="checkbox" id="tipo1" name="tipo1" value="Orgulhoso">
+          <label for="tipo1">Orgulhoso</label>
+          <input type="checkbox" id="tipo1" name="tipo1" value="Destemido">
+          <label for="tipo1">Destemido</label>
+          </select>
+          <div class="info">
+            <label class='informacoes' for="pergunta">Informações a mais:</label>
+            <textarea id="pergunta" name="pergunta" rows="4" cols="50"></textarea>
+            <label class='foto' for="photo">Coloque uma foto:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+            <input type="submit" value="Enviar">
+          </div>
+        </div>
+    </form>
+    </div>
+  </main>
+  <footer class="rodape">
+    <div>
+      <h2>© Copyright Conexão Canina</h2>
+      <h2>Desenvolvido por Grupo PETS</h3>
+    </div>
+    <div>
+      <h2>Telefone: (16) 99999-9999</h2>
+      <h2>e-Mail: conexaocanina@gmail.com</h2>
+    </div>
+  </footer>
+
+</body>
+
+</html>
